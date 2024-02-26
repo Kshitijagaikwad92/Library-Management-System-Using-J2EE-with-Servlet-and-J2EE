@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+ div
+ {
+ 	margin-left:550px;
+ 	background-color:hotpink;
+ 	border:3px solid black;
+ 	width:350px;
+ }
+ #btn1
+ {
+ 	margin-left:125px;
+ 	border:1px solid black;
+ 	width:100px;
+ }
+ #btn2
+ {
+ 	margin-left:125px;
+ 	border:1px solid black;
+ 	width:100px;
+ }
+ input
+ {
+ 	margin-left:5px;
+ }
+ </style>
+</head>
+<body>
+<div>
+<form action="./AddFairyTaleBookServlet" method="post">
+<h1 align="center">Insert Book Details</h1>
+		<label for="bookid" >Enter Book Id : </label>
+		<input type="text" name="bookid" placeholder="Enter Book Id" required>
+		<span style="color:red;">*</span>
+		<br><br>
+		<label for="book_name">Enter Book Name : </label>
+		<input type="text" name="book_name"  placeholder="Enter Book Name" required>
+		<span style="color:red;">*</span>
+		<br><br>
+		<label for="author">Enter Book Author : </label>
+		<input type="text" name="author"  placeholder="Enter Book Author" required>
+		<span style="color:red;">*</span>
+		<br><br>
+		<label for="price">Enter Book Price : </label>
+		<input type="text" name="price"  placeholder="Enter Book Price" required>
+		<span style="color:red;">*</span>
+		<br><br>
+		<label for="edition">Enter Book Edition : </label>
+		<input type="text" name="edition"  placeholder="Enter Book Edition" required>
+		<span style="color:red;">*</span>
+		<br><br>
+		<label for="ISBN">Enter Book "ISBN" : </label>
+		<input type="text" name="ISBN"  placeholder="Enter Book ISBN" required>
+		<span style="color:red;">*</span>
+		
+		<br><br>
+		<input type="reset" id="btn1" name="reset_button" value="Reset">
+		<br><br>
+		<input type="submit" id="btn2" name="submit_button" value="SUBMIT">
+		<br><br>
+	</form>
+</div>
+</body>
+</html>
